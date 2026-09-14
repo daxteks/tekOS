@@ -9,19 +9,19 @@
   ];
 
   config.var = {
-    hostname = "h-laptop";
-    username = "hadi";
+    hostname = "pc";
+    username = "daxtek";
     configDirectory = "/home/" + config.var.username + "/.config/nixos"; # The path of the nixos configuration directory
 
-    keyboardLayout = "fr";
+    keyboardLayout = "gb";
 
-    timeZone = "Europe/Paris";
-    defaultLocale = "en_US.UTF-8";
-    extraLocale = "fr_FR.UTF-8";
+    timeZone = "Europe/London";
+    defaultLocale = "en_GB.UTF-8";
+    extraLocale = "en_GB.UTF-8";
 
     git = {
-      username = "Hadi";
-      email = "112569860+anotherhadi@users.noreply.github.com";
+      username = "Dax Tekchandani";
+      email = "daxtek100@gmail.com";
     };
 
     autoUpgrade = false;

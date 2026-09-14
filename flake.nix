@@ -91,7 +91,7 @@
         packages.${system}.nvim = inputs.nvf-config.packages.${system}.nvim;
         apps.${system}.nvim = inputs.nvf-config.apps.${system}.nvim;
         nixosConfigurations = {
-          h-laptop = import ./hosts/laptop/flake.nix args;
+          pc = import ./hosts/pc/flake.nix args;
           h-work = import ./hosts/work/flake.nix args;
           jack = import ./hosts/server/flake.nix args;
         };

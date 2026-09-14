@@ -25,25 +25,13 @@ in {
 
   hardware = {
     nvidia = {
-      open = true; # Open kernel modules, recommended for Turing and newer (RTX 4070 = Ada Lovelace)
+      open = false;
       nvidiaSettings = true;
-      powerManagement = {
-        enable = true;
-        finegrained = true;
-      };
+      powerManagement.enable = true;
       modesetting.enable = true;
       package = nvidiaDriverChannel;
       # forceFullCompositionPipeline = true; # Only useful when display is connected directly to Nvidia GPU, not in PRIME offload mode
 
-      prime = {
-        offload = {
-          enable = true;
-          enableOffloadCmd = true;
-        };
-        sync.enable = false; # offload mode is better for battery life
-        amdgpuBusId = "PCI:5:0:0";
-        nvidiaBusId = "PCI:1:0:0";
-      };
     };
 
     graphics = {
